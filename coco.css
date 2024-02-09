@@ -1,0 +1,242 @@
+.bar{
+    position: absolute;
+    width: 362px;
+    height: 500px;
+    background-color: rgb(224, 140, 91);
+    animation: size 4s 4s infinite;
+
+}
+.block{ 
+    width: 50px;
+      height: 50px;
+      border: 10px solid rgb(19, 9, 9);
+      padding: 10px;
+      box-shadow: -1px 1px 5px 1px rgb(216, 67, 67) ;
+      
+      border-top: 10px solid brown;
+      border-bottom: 10px solid brown;
+      border-left: 10px solid rgb(199, 47, 47);
+      border-right: 10px solid brown;
+      
+
+}
+
+#r1{
+  position: absolute;
+  left: 91px;
+}
+#r2{
+  position: absolute;
+  left: 182px;
+}
+#r3{
+  position: absolute;
+  left: 271px;
+}
+#r{
+  position: absolute;
+  left: 91px;
+}
+#c1{ z-index: 3;
+  position: absolute;
+  top: 225px; left: -2px;
+  background-color: #330072;
+  height: 400px; width: 184px;
+   background: radial-gradient(circle,#5415a1 10%,rgb(158, 18, 158) 90%, rgb(214, 28, 183) 100%);
+   border-radius:0 0 0 10px;
+   animation: size 4s 4s infinite,wrpl 4s linear;
+
+}
+#c2{ z-index: 3;
+  position: absolute;
+  top: 225px; left: 180px;
+  background-color: #330072;
+  height: 400px; width: 182px;
+  background: radial-gradient(circle,#5415a1 10%,rgb(158, 18, 158) 90%, rgb(214, 28, 183) 100%);
+  box-shadow: 10px 0 10px rgb(124, 114, 114);
+  border-radius:0 0 10px 0px;
+  animation: size 4s 4s infinite,wrpr 4s linear;
+
+}
+#c3{  
+  position: relative; width: 365px;
+  top: 178px; left: -18px;   z-index: 3;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 28px solid rgb(109, 32, 187);
+  animation: size 4s 4s infinite;
+}
+
+  @keyframes size{
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.1);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+
+  @keyframes wrpr{
+    0%{ 
+      z-index: 3;
+      position: absolute;
+      top: 0px; left: 180px;
+      height: 625px; width: 182px;
+      background: radial-gradient(circle,#5415a1 10%,rgb(158, 18, 158) 90%, rgb(214, 28, 183) 100%);
+      box-shadow: 10px 0 10px rgb(124, 114, 114);
+      border-radius:0 0 10px 0px;
+    }
+  }
+  @keyframes wrpl{
+    0%{
+      z-index: 3;
+      position: absolute;
+      top: 0px; left: -2px;
+      background-color: #330072;
+      height: 625px; width: 184px;
+    }
+  }
+
+#sms{z-index: 5;position: absolute; color: whitesmoke;
+  font-size: 30px; top: 400px; left: 100px;
+  font-family: 'Times New Roman', Times, serif;
+  animation: size1 4s infinite;
+}
+#sms1{z-index: 5;position: absolute; color: whitesmoke;
+  font-size: 30px; top: 440px; left: 80px;
+  font-family: 'Times New Roman', Times, serif;
+  animation: size1 4s infinite;
+}
+@keyframes size1{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.3);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+#a1 {z-index: 1;
+  rotate: -45deg;
+  position: absolute;
+  top: 0; left: 30px;
+  height: 250px; width: 156.25px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 150px 150px 0 0;
+  animation: la1 2.9s 4s infinite;
+  transform-origin: bottom center;
+  box-shadow: 0 0 10px rgba(236, 97, 3, 0.5);
+}
+#a2 { z-index: 1;
+  rotate: 45deg;
+  position: absolute;
+  top: 0; left: -80px;
+  height: 250px; width: 156.25px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 150px 150px 0 0;
+  animation: ra1 2.9s 4s infinite;
+  transform-origin: bottom center;
+  box-shadow: 0 0 10px rgba(236, 97, 3, 0.5);}
+@keyframes la1{
+  0%{z-index: 1;
+    position: absolute;
+  rotate: -45deg;
+  height: 150px; width: 100px;
+  border-radius: 150px 150px 0 0;
+  transform-origin: bottom center; 
+  box-shadow: 0 0 10px rgba(236, 97, 3, 0.5);   
+   background: linear-gradient(to bottom right, #ec0738, #ff00b3);
+  }
+  
+  50%{ z-index: 1;position: absolute;
+  rotate: -45deg;
+  height: 187.5px; width: 125px;
+  border-radius: 150px 150px 0 0;
+  transform-origin: bottom center; 
+  box-shadow: 0 0 10px rgba(236, 97, 3, 0.5);
+  background: linear-gradient(to bottom right, #ec0738, #ff00b3);
+}
+
+  100%{ z-index: 1;position: absolute;
+  rotate: -45deg;
+  height: 150px; width: 100px;
+  border-radius: 150px 150px 0 0;
+  transform-origin: bottom center;
+  box-shadow: 0 0 10px rgba(236, 97, 3, 0.5);
+  background: linear-gradient(to bottom right, #ec0738, #ff00b3);
+}
+}
+@keyframes ra1{
+  0%{ z-index: 1;position: absolute;
+  rotate: 45deg;
+  position: absolute;
+  top: 0; left: -40px;
+  height: 150px; width: 100px;
+  border-radius: 150px 150px 0 0;
+  transform-origin: bottom center;
+  box-shadow: 0 0 10px rgba(236, 97, 3, 0.5);       background: linear-gradient(to bottom right, #ec0738, #ff00b3);
+
+}
+50%{ z-index: 1;
+  rotate: 45deg;position: absolute;
+  position: absolute;
+  top: 0; left: -58px;
+  height: 187.5px; width: 125px;
+  border-radius: 150px 150px 0 0;
+  transform-origin: bottom center;
+  box-shadow: 0 0 10px rgba(236, 97, 3, 0.5);      background: linear-gradient(to bottom right, #ec0738, #ff00b3);
+
+}
+100%{rotate: 45deg;
+  z-index: 1; position: absolute;
+  position: absolute;
+  top: 0; left: -40px;
+  height: 150px; width: 100px;
+  border-radius: 150px 150px 0 0;
+  transform-origin: bottom center;
+  box-shadow: 0 0 10px rgba(236, 97, 3, 0.5);      background: linear-gradient(to bottom right, #ec0738, #ff00b3);
+
+}
+  }
+#one{z-index: 1;
+  position: absolute;
+  top: 20px;
+  left: 120px;
+  
+}
+#wish{  position: absolute; font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        color: aliceblue;
+        top: 50px; left: 480px;
+        animation:rot 6s 2s infinite;
+}
+
+@keyframes rot{
+  0%{
+      transform: rotateY(90deg);
+      transform: rotateY(180deg);
+      transform: rotateY(270deg);
+      transform: rotateY(360deg);
+  }
+  }
+
+  #w1{  position: absolute; font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    top: 400px; left: 480px;
+    animation:ro 8s 3s infinite;
+  }
+  @keyframes ro{
+    0%{
+        transform: rotateY(-90deg);
+        transform: rotateY(-180deg);
+        transform: rotateY(-270deg);
+        transform: rotateY(-360deg);
+    }
+  }
